@@ -18,7 +18,7 @@ const hingeuser = {
 
 }
 
-console.log(hingeuser.fullname.userfullname.firstname);
+//console.log(hingeuser.fullname.userfullname.firstname);
 
 
 //how to combine obj
@@ -54,11 +54,26 @@ const user=[
 user[1].email
 //console.log(user[1].email);
 
-console.log(Object.keys(tinderuser));  //its show datatype
-console.log(Object.values(tinderuser));  //its show values
-console.log(Object.entries(tinderuser)); // its show key snd value
+//console.log(Object.keys(tinderuser));  //its show datatype
+//console.log(Object.values(tinderuser));  //its show values
+//console.log(Object.entries(tinderuser)); // its show key snd value
 
-console.log(tinderuser.hasOwnProperty('isloggedIn'));  //to check property is thrre or not 
+//console.log(tinderuser.hasOwnProperty('isloggedIn'));  //to check property is thrre or not 
 
 
+//object destructure
+
+const course ={
+    coursename:"js in hindi",
+    price:"free",
+    courseInstructor:"saba "
+}
+
+//course.courseInstructor
+
+/*take the property courseInstructor from the object
+Store it in a new variable called instructure */
+
+const {courseInstructor:instructure}=course    //basically its rename the propertry 
+console.log(instructure);                  
 
