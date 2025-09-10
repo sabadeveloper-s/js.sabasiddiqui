@@ -3,11 +3,127 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM learning</title>
+    <style>
+       .bg-bl{
+        background-color: #212121;
+        color: #fff;
+       }
+    </style>
 </head>
-<body>
-    <div class="bg-bl">
-    <h1  id="heading">dom learning on chai aur code </h1>
+<body class="bg-bl">
+    <div>
+    <h1  id="heading" class="title">dom learning on chai aur code<span style="display: none">test text</span> </h1>
     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. </p>
+    <input type ="password" name=""  id =""> 
+    <ul>
+        <li class="numlist">one</li>
+        <li class="numlist">two</li>
+        <li class="numlist">three</li>
+        <li class="numlist">four</li>
+    </ul>
     </div>
 </body>
 </html>
+
+
+
+<!--
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ NOTES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+document.getElementById('heading')
+=> <h1 id = "heading">dom learning on chai aur code </h1>
+
+document.getElementById('heading').id
+=>heading 
+
+document.getElementById('heading').class
+=>undefined
+
+document.getElementById('heading').classname
+=>title
+
+document.getElementById('heading').getAttribute('id')
+=>heading 
+
+document.getElementById('heading').getAttribute('class')
+=>title
+
+document.getElementById('heading').setAttribute('class','saba')
+=>undefined
+
+but it change in browser title will be now saba  in elemnent on br0wser 
+
+
+const title = document.getElementById('heading')
+
+title.style.backgroundColor="green"
+=>green
+
+title.style.padding="15px"
+=>15px
+
+title.style.borderRadius="15px"
+=>15px
+
+
++++++++++++++++++++++++++++++++++++++++++++++ INTERESTING +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+
+title.textContent               =>its give on display value 
+dom learning on chai aur code 
+
+title.innerText                  =>its give  all inner  value  that hide by style 
+dom learning on chai aur code test text
+
+title.innerHTML                  =>its give all html code 
+dom learning on chai aur code <span> style= "display: none"</span>
+
+
++++++++++++++++++++++++++++++++++++++++++   QUERY SELECTOR  ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+document.querySelector('ul')
+=>ul
+
+const list = document.querySelector('ul')
+
+list.style.backgroundColor="red"
+
+
+document.querySelectorAll('li')
+=>li
+
+const listofitem = document.querySelector('li')
+
+listofitem.style.backgroundColor="red"
+=>ERROR
+
+listofitem[0].style.backgroundColor="red"
+=>red 
+
+using foreach loop
+
+listofitem.foreach(function(list){
+    list.style.backgroundColor="purple"
+})
+
+
+
+document.getElementsByClassName('numlist')
+HTMLCollection(4) [li.numlist, li.numlist, li.numlist, li.numlist]
+
+
+const list = document.getElementsByClassName('numlist')
+undefined
+
+Array.from(list)
+(4) [li.numlist, li.numlist, li.numlist, li.numlist]
+
+const myarr=Array.from(list)
+undefined
+
+myarr.forEach(function(li){
+    li.style.backgroundColor="orange"
+})   
+undefined
+
+-->
