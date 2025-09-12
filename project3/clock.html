@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+</head>
+<style>
+    .nav{
+      display:flex;
+      justify-content:center;
+      gap:18px;
+      padding:18px;
+      background-color: black;
+      border-bottom:1px solid gray;
+      position:sticky;
+      top:0;
+    }
+    .btn {
+       padding:12px 26px;
+       background-color: #ffffff;
+       color:#222;
+       border-radius:10px;
+       border:2px solid black;
+       font-weight:600;
+       box-shadow:0 2px 0 black;
+       cursor:pointer;
+       transition:transform .12s ease, box-shadow .12s ease;
+    }
+    .btn2{
+       padding:12px 26px;
+       background-color: #ffffff;
+       color:#222;
+       border-radius:10px;
+       border:2px solid black;
+       font-weight:600;
+       box-shadow:0 2px 0 black;
+       cursor:pointer;
+       transition:transform .12s ease, box-shadow .12s ease;
+       background:linear-gradient(#fafafa,#ededed);
+    }
+
+    body{
+        background-color: black;
+        color: white;
+    }
+    .center{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+    }
+    #Clock{
+        padding: 20px 50px;
+        margin-top: 10px;
+        border-radius: 10px;
+        font-size: 40px;
+        background-color: orange;
+    }
+</style>
+<body>
+    <nav class="nav">
+        <button class="btn"><a href="/" aria-current="page">HOME</a></button>
+       <button class="btn2" ><a target="_blank" href="https://www.youtube.com/@sabaarchive">YOUTUBE CHANNEL</a></button>
+    </nav>
+    <div class="center">
+        <h1>Your Local time </h1>
+        <div id="Clock"></div>
+    </div>
+    
+</body>
+</html>
