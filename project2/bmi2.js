@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function() {
             results.innerHTML = 'Please enter a valid weight';
         } else {
             const bmi = (weight / ((height / 100) * (height / 100))).toFixed(2);
+            
             results.innerHTML = `<span>${bmi}</span>`;
         }
     });

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="guessnumber.css">
-    <link rel="stylesheet" href="../guessnumber.css">
+   <!-- <link rel="stylesheet" href="../guessnumber.css">-->
 
     <title>GUESS THE NUMBER</title>
 </head>
@@ -21,13 +21,14 @@
         <form class="form">
             <label2 for="guess-number" id="guess">Guess a Number</label><br>
             <input type="text"id="guess-number" name="guess-number"><br>
-            <input type="submit"id="subt"value="submit guess "name ="guess-submit"><br>
+            <button  type="button" class="button" id="subt">submit Guess</button><br>
         </form>
         <div class="result-paras">
             <p>Previous guesses: <span class="guesses"></span></p>
-            <p>guesses remaining: <span class="last result">10</span></p>
-            <p class="lowrghi"></p>
+            <p>guesses remaining: <span class="lastresult">10</span></p>
+            <p class="lower"></p>
         </div>
+        <script src="./guessnumber2.js"></script>
 
     </div>
 </body>
