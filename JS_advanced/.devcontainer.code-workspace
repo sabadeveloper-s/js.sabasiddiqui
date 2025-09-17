@@ -1,0 +1,55 @@
+{
+	"folders": [
+		{
+			"path": "../.devcontainer"
+		},
+		{
+			"path": "../.github"
+		},
+		{
+			"path": "../dom"
+		},
+		{
+			"path": "../events"
+		},
+		{
+			"path": "../JS"
+		},
+		{
+			"path": "."
+		},
+		{
+			"path": "../JS1"
+		},
+		{
+			"path": "../JS2"
+		},
+		{
+			"path": "../JS3"
+		},
+		{
+			"path": "../JS4"
+		},
+		{
+			"path": "../project"
+		},
+		{
+			"path": "../project1"
+		},
+		{
+			"path": "../project2"
+		},
+		{
+			"path": "../project3"
+		},
+		{
+			"path": "../project4"
+		},
+		{
+			"path": "../project5"
+		},
+		{
+			"path": "../project6"
+		}
+	]
+}
